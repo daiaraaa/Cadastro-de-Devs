@@ -18,9 +18,9 @@ button.addEventListener('click', (ev) =>{
     const br2 = document.createElement('br')
     const br3 = document.createElement('br')
 
-    const label_Tecnologia = document.createElement('label')
-    label_Tecnologia.innerText = 'Nome da tecnologia:'
-    label_Tecnologia.setAttribute('for','tecnologias') 
+    const label_tec = document.createElement('label')
+    label_tec.innerText = 'Nome da tecnologia:'
+    label_tec.setAttribute('for','tecnologias') 
 
     const input_tecnologias = document.createElement('input')
     input_tecnologias.type = 'text'
@@ -32,9 +32,9 @@ button.addEventListener('click', (ev) =>{
     input_tecnologias.style.border = '2px solid #e9dede'
     input_tecnologias.style.borderRadius = '10px'
 
-    const subTitulo = document.createElement('label')
-    subTitulo.innerText = 'Tempo de experiência:'
-    subTitulo.setAttribute('for','input_time' + number_input) 
+    const titulo = document.createElement('label')
+    titulo.innerText = 'Tempo de experiência:'
+    titulo.setAttribute('for','input_time' + number_input) 
 
     const input_num1 = document.createElement('input')
     input_num1.type = 'radio'
@@ -72,7 +72,7 @@ button.addEventListener('click', (ev) =>{
     retira.style.border = '2px solid #e9dede'
     retira.style.borderRadius = '15px'
 
-    bloco.append(label_Tecnologia,br,input_tecnologias,br1,subTitulo,br2,input_num1,label_num1,input_num2,label_num2,input_num3,label_num3,br3,retira)
+    bloco.append(label_tec,br,input_tecnologias,br1,titulo,br2,input_num1,label_num1,input_num2,label_num2,input_num3,label_num3,br3,retira)
     div.appendChild(bloco)
     form.appendChild(div)
 
